@@ -1,0 +1,9 @@
+eureka netflix的服务发现
+feign api转接口
+archaius api管理
+ribbon LB
+hystrix 断路
+zuul 路由
+Spring Cloud Config 配置中心
+Spring WebFlux 函数式Web服务（脚本式语言）
+Spring cloud bus 总线（发布更新配置之类的）

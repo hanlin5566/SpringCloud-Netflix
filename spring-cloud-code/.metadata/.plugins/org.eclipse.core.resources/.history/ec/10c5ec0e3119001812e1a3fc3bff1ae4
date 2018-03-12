@@ -1,0 +1,6 @@
+spring.application.name=eureka-zuul
+server.port=8200
+eureka.client.serviceUrl.defaultZone=http://localhost:8761/eureka/
+#zuul路由配置
+zuul.routes.api-a.path=/api-a/**
+zuul.routes.api-a.serviceId=compute-service

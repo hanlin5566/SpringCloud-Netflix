@@ -1,0 +1,40 @@
+docker发布到kubernetes 集群管理工具 rancher之类的
+
+MQ 不够灵活 消息重现很麻烦
+
+linkderd 
+
+微服务不是这种思路
+微服务的思路总结一下
+对内及对外
+面向功能编程 功能为一等共鸣
+共鸣 公民
+在整个微服务中没有系统的概念
+系统来源于功能的组合
+上海-刘毅(247687009)  18:40:32
+功能组合起来就完成了各种系统
+业务被抽象成云
+
+
+eureka--服务注册发现
+ eureka-server -->服务注册网管
+ eureka-client -->springboot程序，服务客户端
+
+ribbon-->服务消费者--负载均衡器
+
+
+feign-->客户端请求模板化
+直接请求类似于
+@Autowired
+    private RestTemplate restTemplate;
+
+    
+@GetMapping(value = "/add")
+    public String add() {
+        return restTemplate.getForEntity("http://COMPUTE-SERVICE/add?a=10&b=20", String.class).getBody();
+    }
+
+作者：杜琪
+链接：https://www.jianshu.com/p/0aef3724e6bc
+來源：简书
+著作权归作者所有。商业转载请联系作者获得授权，非商业转载请注明出处。

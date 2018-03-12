@@ -1,0 +1,34 @@
+package com.hanson.feign;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.cloud.netflix.feign.FeignClient;
+import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RequestMethod;
+import org.springframework.web.bind.annotation.RequestParam;
+import org.springframework.web.bind.annotation.RestController;
+
+/**
+ * 模拟客户请求，接口写在了本类中。应该单独封装为一个单独接口
+ * @author THINK
+ *
+ */
+@RestController
+@FeignClient(value = "hanson-service")//声明此接口访问hanson-service-->与服务提供者的配置的spring.application.name一致
+public class ConsumerController {
+	@Autowired
+	HansonService service;//注入定义的接口
+	@RequestMapping(value = "/",method = RequestMethod.GET)
+    public String sayHi(){
+		String string = service.get();
+		System.out.println(string);
+        return string;
+    }
+	
+	/**
+	 * feigen接口
+	 */
+	interface HansonService{
+		@RequestMapping(value = "",method = RequestMethod.GET)
+	    String get();
+	}
+}

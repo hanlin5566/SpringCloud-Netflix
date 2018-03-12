@@ -1,0 +1,10 @@
+spring.application.name=eureka-zuul
+server.port=8200
+eureka.client.serviceUrl.defaultZone=http://localhost:8761/eureka/
+#zuul路由配置
+#所有的service-ribbon请求转发至eureka上的eureka-consumer服务
+zuul.routes.service-ribbon.path=/service-ribbon/**
+zuul.routes.service-ribbon.serviceId=eureka-consumer
+#所有的service-feign请求转发至eureka上的eureka-consumer服务
+zuul.routes.service-feign.path=/service-feign/**
+zuul.routes.service-feign.serviceId=eureka-consumer-feign
