@@ -1,3 +1,0 @@
-spring.application.name=hanson-service
-server.port=8003
-eureka.client.serviceUrl.defaultZone=http://localhost:8761/eureka/

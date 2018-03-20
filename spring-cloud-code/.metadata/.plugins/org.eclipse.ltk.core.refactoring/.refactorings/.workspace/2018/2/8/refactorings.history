@@ -1,4 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<session version="1.0">
-<refactoring comment="Rename resource &apos;micService-zuul&apos; to &apos;Eureka-Zuul&apos;" description="Rename resource &apos;micService-zuul&apos;" flags="7" id="org.eclipse.ltk.core.refactoring.rename.resource" input="/micService-zuul" name="Eureka-Zuul" stamp="1519453385299" updateReferences="true"/>
-</session>

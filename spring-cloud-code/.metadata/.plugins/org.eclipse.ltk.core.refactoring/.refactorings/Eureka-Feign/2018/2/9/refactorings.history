@@ -1,4 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<session version="1.0">
-<refactoring comment="Copy element &apos;ConsumerController.java&apos; to &apos;FeignHystrix/src/main/java/com.hanson.hystrix&apos;&#x0D;&#x0A;- Original project: &apos;Eureka-Feign&apos;&#x0D;&#x0A;- Destination element: &apos;FeignHystrix/src/main/java/com.hanson.hystrix&apos;&#x0D;&#x0A;- Original element: &apos;com.hanson.feign.ConsumerController.java&apos;" description="Copy compilation unit" destination="=FeignHystrix/src\/main\/java&lt;com.hanson.hystrix" element1="/src\/main\/java&lt;com.hanson.feign{ConsumerController.java" files="0" flags="589830" folders="0" id="org.eclipse.jdt.ui.copy" policy="org.eclipse.jdt.ui.copyResources" stamp="1519617299406" units="1" version="1.0"/>
-</session>

@@ -1,5 +1,0 @@
-package com.hanson.zuul;
-
-public class MyZuulFilter {
-
-}

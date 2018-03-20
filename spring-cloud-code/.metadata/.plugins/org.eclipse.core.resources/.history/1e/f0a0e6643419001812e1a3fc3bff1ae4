@@ -1,5 +1,0 @@
-#spring.application.name,这个很重要，这在以后的服务与服务之间相互调用一般都是根据这个name 。 
-spring.application.name=hanson-service
-server.port=8003
-#与Eureka-Server中的${eureka.client.serviceUrl.defaultZone}一致。
-eureka.client.serviceUrl.defaultZone=http://localhost:8761/eureka/
